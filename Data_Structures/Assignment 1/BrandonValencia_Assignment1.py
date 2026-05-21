@@ -148,6 +148,7 @@ def my_choice(data):
 # =====================================================================
 
 def main():
+    """Demonstrates and verifies the correctness of all assignment functions."""
     print("=" * 60)
     print("RUNNING ASSIGNMENT 1 TEST SUITE")
     print("=" * 60)
@@ -158,4 +159,35 @@ def main():
 
     # 2. Test is_even
     print(f"2. is_even(42): {is_even(42)} (Expected: True)")
-    print(f"   is_even(17): {is_even(17)} (Expected
+    print(f"   is_even(17): {is_even(17)} (Expected: False)\n")
+
+    # 3. Test minmax
+    sample_list = [34, 12, 89, 5, 23, 7]
+    print(f"3. minmax({sample_list}): {minmax(sample_list)} (Expected: (5, 89))\n")
+
+    # 4. Test sum_of_squares (Loop)
+    print(f"4. sum_of_squares(4): {sum_of_squares(4)} (Expected 1+4+9 = 14)\n")
+
+    # 5. Test sum_of_squares_comprehension (One-liner)
+    print(f"5. sum_of_squares_comprehension(4): {sum_of_squares_comprehension(4)} (Expected: 14)\n")
+
+    # 6. Test sum_of_odd_squares (Loop)
+    print(f"6. sum_of_odd_squares(6): {sum_of_odd_squares(6)} (Expected 1+9+25 = 35)\n")
+
+    # 7. Test sum_of_odd_squares_comprehension (One-liner)
+    print(f"7. sum_of_odd_squares_comprehension(6): {sum_of_odd_squares_comprehension(6)} (Expected: 35)\n")
+
+    # 8. Test get_positive_index
+    test_str = "Python"
+    neg_idx = -2
+    pos_idx = get_positive_index(test_str, neg_idx)
+    print(f"8. get_positive_index('{test_str}', {neg_idx}): {pos_idx} (Expected: 4)")
+    print(f"   Verification -> s[-2]: '{test_str[neg_idx]}', s[4]: '{test_str[pos_idx]}'\n")
+
+    # 9. Test my_choice
+    options = ['Apple', 'Banana', 'Cherry', 'Date']
+    print(f"9. my_choice({options}): {my_choice(options)} (Expected: Random selection)")
+    print("=" * 60)
+
+if __name__ == "__main__":
+    main()
