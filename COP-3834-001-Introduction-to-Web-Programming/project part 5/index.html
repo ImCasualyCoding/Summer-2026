@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Save Our Oceans | Advocacy Project</title>
+        
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+        
+        <!-- CSS Stylesheets -->
+        <link href="reset.css" rel="stylesheet" type="text/css" />
+        <link href="styles.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <!-- Header & Navigation Bar -->
+        <header class="navbar-header">
+            <nav class="navbar">
+                <div class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="logo-icon">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.53c-.26-.81-1-1.4-1.9-1.4h-1v-3c0-.55-.45-1-1-1h-6v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                    </svg>
+                    <span>OceanGuard</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#about" class="nav-link">Our Mission</a></li>
+                    <li><a href="#impact" class="nav-link">The Threat</a></li>
+                    <li><a href="#take-action" class="nav-link">Take Action</a></li>
+                    <!-- Theme Toggle Button as required by Part 5 instructions -->
+                    <li><button id="theme-button">Toggle Dark Mode</button></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="hero-content">
+                    <span class="badge">Act Now for Tomorrow</span>
+                    <h1>Preserving Earth's Oceans for Future Generations</h1>
+                    <p class="hero-subtitle">Our oceans generate over half the world's oxygen, regulate climate, and host millions of species. Yet, they face unprecedented threats from plastic pollution, overfishing, and climate change.</p>
+                    <div class="hero-buttons">
+                        <a href="#take-action" class="btn btn-primary">Join the Movement</a>
+                        <a href="#about" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="hero-image-container">
+                    <!-- Clean SVG Ocean Art -->
+                    <svg viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg" class="hero-illustration">
+                        <defs>
+                            <linearGradient id="oceanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#0ea5e9" />
+                                <stop offset="100%" stop-color="#2563eb" />
+                            </linearGradient>
+                            <linearGradient id="waveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="#0284c7" stop-opacity="0.8"/>
+                                <stop offset="50%" stop-color="#3b82f6" stop-opacity="0.6"/>
+                                <stop offset="100%" stop-color="#1d4ed8" stop-opacity="0.9"/>
+                            </linearGradient>
+                        </defs>
+                        <!-- Background Circle -->
+                        <circle cx="250" cy="200" r="180" fill="url(#oceanGrad)" opacity="0.15" />
+                        <!-- Abstract Wave Art -->
+                        <path d="M 50,300 C 150,220 200,380 300,300 C 400,220 450,280 450,280 L 450,400 L 50,400 Z" fill="url(#waveGrad)" />
+                        <path d="M 30,340 C 120,290 180,390 280,330 C 380,270 470,360 470,360 L 470,400 L 30,400 Z" fill="url(#oceanGrad)" opacity="0.8" />
+                        
+                        <!-- Marine Life Silhouette -->
+                        <path d="M220,120 C240,110 270,115 290,130 C270,140 250,140 230,132 Z" fill="#3b82f6" opacity="0.7"/>
+                        <path d="M120,180 C140,170 170,175 190,190 C170,200 150,200 130,192 Z" fill="#0ea5e9" opacity="0.5"/>
+                    </svg>
+                </div>
+            </section>
+
+            <!-- About / Mission Section -->
+            <section id="about" class="info-section">
+                <div class="section-header">
+                    <h2>Our Shared Mission</h2>
+                    <p>We are dedicated to combating marine destruction through community education, policy advocacy, and hands-on cleanup initiatives.</p>
+                </div>
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h3>Zero Plastic Waste</h3>
+                        <p>Over 8 million tons of plastic enter our oceans annually. We advocate for systemic bans on single-use plastics and fund local beach cleanups globally.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9s2.015-9 4.5-9yM3 9.75h18M3 14.25h18" />
+                            </svg>
+                        </div>
+                        <h3>Climate Resilience</h3>
+                        <p>Ocean warming and acidification disrupt marine ecosystems. We support policies promoting renewable energy and coral reef restoration.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h3>Protected Areas</h3>
+                        <p>Establishing marine sanctuaries allows marine wildlife to recover and thrive. We campaign to protect 30% of global waters by 2030.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Newsletter Form / Action Section -->
+            <section id="take-action" class="action-section">
+                <div class="action-container">
+                    <div class="action-text">
+                        <h2>Join OceanGuard Today</h2>
+                        <p>Subscribe to receive bi-weekly updates on cleanup events, policy votes, and conservation tips you can implement in your daily life.</p>
+                    </div>
+                    <form class="action-form" onsubmit="event.preventDefault(); alert('Thank you for joining!');">
+                        <input type="email" placeholder="Enter your email address" required aria-label="Email subscription">
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="footer-content">
+                <p>&copy; 2026 OceanGuard Advocacy Project. Built with passion for our blue planet.</p>
+            </div>
+        </footer>
+
+        <!-- Javascript File (Part 5 requirement: link index.js right above closing body tag) -->
+        <script src="index.js"></script>
+    </body>
+</html>
