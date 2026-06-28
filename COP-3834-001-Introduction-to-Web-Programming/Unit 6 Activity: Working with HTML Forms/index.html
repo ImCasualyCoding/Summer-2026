@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify - Song Requests</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link href="reset.css" rel="stylesheet" type="text/css" />
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+  <link href="reset-webview.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div class="spotify-wrapper">
+    <div class="spotify-card">
+      <div class="spotify-logo">
+        <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor">
+          <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.586 14.424c-.18.295-.565.387-.86.207-2.377-1.454-5.37-1.783-8.894-.982-.336.076-.67-.135-.747-.472-.077-.336.136-.67.472-.747 3.852-.88 7.15-.504 9.822 1.13.295.18.387.563.207.864zm1.225-2.72c-.227.367-.707.487-1.074.26-2.72-1.672-6.87-2.157-10.078-1.182-.413.125-.85-.107-.975-.52-.125-.413.107-.85.52-.975 3.67-1.114 8.24-.57 11.347 1.343.367.227.487.707.26 1.074zm.107-2.846C14.636 8.91 9.248 8.73 6.138 9.675c-.482.146-.983-.128-1.13-.61-.147-.482.128-.983.61-1.13 3.585-1.087 9.535-.877 13.336 1.378.434.257.578.814.32 1.248-.258.435-.815.578-1.25.32z"/>
+        </svg>
+        <span>Spotify</span>
+      </div>
+      <h1>Submit a Song Request 🗳</h1>
+
+      <!--Add form elements here-->
+      <form id="songRequests">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="What should we call you?" required autocomplete="off">
+        </div>
+        
+        <div class="form-group">
+          <label for="song">Song:</label>
+          <input type="text" id="song" placeholder="What's the track name?" required autocomplete="off">
+        </div>
+        
+        <div class="form-group">
+          <label for="artist">Artist:</label>
+          <input type="text" id="artist" placeholder="Who sings this?" required autocomplete="off">
+        </div>
+        
+        <div class="form-group">
+          <label>Genre:</label>
+          <div class="radio-group">
+            <label class="radio-label">
+              <input type="radio" name="genre" value="Pop" checked>
+              <span>Pop</span>
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="genre" value="Rock">
+              <span>Rock</span>
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="genre" value="Hip Hop">
+              <span>Hip Hop</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="requestDate">Request Date:</label>
+          <input type="date" id="requestDate" required>
+        </div>
+
+        <div class="form-group">
+          <label for="passphrase">Promo Passphrase:</label>
+          <input type="text" id="passphrase" placeholder="narwhals777 (triples request)" autocomplete="off">
+        </div>
+
+        <input type="submit" value="Submit Request">
+      </form>
+    </div>
+
+    <!-- Stretch 1: Display a list of song requests -->
+    <div class="requests-section">
+      <h2>Recent Requests 🎵</h2>
+      <div class="request-list" id="requestList">
+        <p class="empty-message">No requests submitted yet.</p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
