@@ -1,0 +1,42 @@
+Assignment Summary
+
+Modifications to stack_ADT.py:
+- Added maxlen to __init__ to define the maximum capacity.
+- The underlying list is pre-allocated as [None] * maxlen.
+- Managed an internal top pointer and size variable to track the stack's state instead of appending.
+- Added a custom Full exception. The push method raises this exception when the stack reaches its pre-allocated maximum capacity.
+- Added a recursive clear method that removes elements by calling pop() and then itself recursively until the stack is empty.
+
+Modifications to Queue.py:
+- Added a get_contents method to help print the exact contents of the queue from front to back.
+- Added a driver block tracing the sequence of operations for Queues 1, printing operation, returned value, and queue contents.
+- Added a driver block for Queues 2 that prints the explanation and answer for the theoretical scenario.
+
+Queues 1 Output:
+enqueue(5), Returned: None, Queue: [5]
+enqueue(3), Returned: None, Queue: [5, 3]
+dequeue(), Returned: 5, Queue: [3]
+enqueue(2), Returned: None, Queue: [3, 2]
+enqueue(8), Returned: None, Queue: [3, 2, 8]
+dequeue(), Returned: 3, Queue: [2, 8]
+dequeue(), Returned: 2, Queue: [8]
+enqueue(9), Returned: None, Queue: [8, 9]
+enqueue(1), Returned: None, Queue: [8, 9, 1]
+dequeue(), Returned: 8, Queue: [9, 1]
+enqueue(7), Returned: None, Queue: [9, 1, 7]
+enqueue(6), Returned: None, Queue: [9, 1, 7, 6]
+dequeue(), Returned: 9, Queue: [1, 7, 6]
+dequeue(), Returned: 1, Queue: [7, 6]
+enqueue(4), Returned: None, Queue: [7, 6, 4]
+dequeue(), Returned: 7, Queue: [6, 4]
+dequeue(), Returned: 6, Queue: [4]
+
+Queues 2 Output:
+Scenario: 32 enqueue operations, 10 first operations, and 15 dequeue operations, 5 of which raised Empty errors that were caught and ignored.
+Calculation:
+- Initial size: 0
+- 32 enqueues adds 32 to size.
+- 10 first operations do not change the size.
+- 15 dequeue attempts, but 5 failed (Empty error), meaning 10 successful dequeues.
+- 10 successful dequeues subtracts 10 from size.
+Final Size = 32 - 10 = 22.
