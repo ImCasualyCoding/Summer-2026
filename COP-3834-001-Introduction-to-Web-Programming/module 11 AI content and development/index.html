@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>V.S.O.T &mdash; Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&family=JetBrains+Mono:wght@400;700&display=swap');
+    body { font-family: 'Inter', sans-serif; background-color: #000; color: #f4f4f4; }
+    .mono { font-family: 'JetBrains Mono', monospace; }
+  </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col selection:bg-[#f4f4f4] selection:text-black">
+  <header class="border-b-2 border-[#f4f4f4] p-6 flex justify-between items-end">
+    <div class="text-4xl font-black uppercase tracking-tighter leading-none hover:opacity-75 transition-opacity"><a href="index.html">V.S.O.T<br>STUDIO</a></div>
+    <div class="mono text-xs hidden sm:block text-right">
+      <span>LAT: 28.5721° N / LON: 80.6480° W</span><br>
+      <span>LAUNCH CAPABILITIES: ACTIVE</span>
+    </div>
+    <nav class="hidden md:flex gap-8 mono text-sm uppercase font-bold">
+      <a href="about.html" class="hover:bg-[#f4f4f4] hover:text-[#000] px-2 transition-colors">About</a>
+      <a href="products.html" class="hover:bg-[#f4f4f4] hover:text-[#000] px-2 transition-colors">Products</a>
+      <a href="careers.html" class="hover:bg-[#f4f4f4] hover:text-[#000] px-2 transition-colors">Careers</a>
+      <a href="contact.html" class="hover:bg-[#f4f4f4] hover:text-[#000] px-2 transition-colors">Contact</a>
+    </nav>
+  </header>
+
+  <main class="flex-1 flex flex-col">
+    <section class="border-b-2 border-[#f4f4f4] grid grid-cols-1 md:grid-cols-2">
+      <div class="p-8 md:p-16 border-b-2 md:border-b-0 md:border-r-2 border-[#f4f4f4] flex flex-col justify-center">
+        <h1 class="text-6xl md:text-8xl font-black uppercase tracking-tighter leading-[0.9]">
+          Space<br>
+          Driven<br>
+          Engineering
+        </h1>
+      </div>
+      <div class="p-8 md:p-16 flex flex-col justify-between">
+        <p class="text-xl md:text-2xl font-semibold leading-tight max-w-md">
+          Award-winning aerospace engineering firm crafting orbital infrastructure, heavy-lift capabilities, and deep space exploration vehicles.
+        </p>
+        <div class="mt-12 mono text-sm uppercase">
+          <a href="products.html" class="inline-block border-2 border-[#f4f4f4] px-6 py-3 hover:bg-[#f4f4f4] hover:text-black transition-colors font-bold">Explore Systems &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-8 md:p-16 flex-1">
+      <div class="max-w-4xl">
+        <h2 class="text-3xl font-black uppercase mb-8 tracking-tight">Manifesto</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-lg leading-relaxed">
+          <p>
+            Aerospace engineering is no longer a tool applied at the end of a process, but a condition that structures how humanity expands. We design inside systems defined by physics, orbital mechanics, networks, and structural integrity.
+          </p>
+          <p>
+            The aim is not to aestheticize technology. The aim is to engage the cosmos as it is structured today—complex, hostile, contingent, and infinite. Complexity is neither avoided nor simplified away. It is engineered and conquered.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t-2 border-[#f4f4f4] p-6 flex flex-col sm:flex-row justify-between items-center mono text-xs uppercase gap-4">
+    <div>&copy; 2026 Vision Space of Throwns</div>
+    <div class="flex gap-6">
+      <a href="terms.html" class="hover:underline underline-offset-4">Terms of Service</a>
+      <a href="#" class="hover:underline underline-offset-4">Privacy</a>
+    </div>
+  </footer>
+</body>
+</html>

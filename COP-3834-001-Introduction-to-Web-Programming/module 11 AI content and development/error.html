@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>V.S.O.T &mdash; System Error</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&family=JetBrains+Mono:wght@400;700&display=swap');
+    body { font-family: 'JetBrains Mono', monospace; background-color: #000; color: #f4f4f4; }
+  </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col selection:bg-[#f4f4f4] selection:text-black p-6 md:p-12">
+  <main class="flex-1 border-2 border-[#f4f4f4] p-8 md:p-16 flex flex-col justify-center items-center text-center relative overflow-hidden">
+    
+    <!-- Background glitch effect concept -->
+    <div class="absolute inset-0 opacity-10 pointer-events-none flex flex-wrap gap-4 overflow-hidden text-[8rem] font-black leading-none break-all" aria-hidden="true">
+      404404404404404404404404404404404404404
+    </div>
+
+    <div class="relative z-10 max-w-2xl">
+      <div class="text-6xl md:text-9xl font-black tracking-tighter mb-4">404</div>
+      <div class="text-xl md:text-2xl font-bold uppercase mb-8 text-gray-400">Signal Lost in Deep Space</div>
+      
+      <p class="text-sm md:text-base leading-relaxed mb-12 max-w-lg mx-auto">
+        > ERROR: SECTOR_NOT_FOUND<br>
+        > The coordinates you are attempting to jump to do not exist in current navigation charts.<br>
+        > ACTION: Recalibrate trajectory.
+      </p>
+
+      <a href="index.html" class="inline-block border-2 border-[#f4f4f4] px-8 py-4 uppercase font-bold text-sm hover:bg-[#f4f4f4] hover:text-black transition-colors">
+        Initiate Return Trajectory
+      </a>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>V.S.O.T &mdash; About</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&family=JetBrains+Mono:wght@400;700&display=swap');
+    body { font-family: 'Inter', sans-serif; background-color: #000; color: #f4f4f4; }
+    .mono { font-family: 'JetBrains Mono', monospace; }
+  </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col selection:bg-[#f4f4f4] selection:text-black">
+  <header class="border-b-2 border-[#f4f4f4] p-6 flex justify-between items-end">
+    <div class="text-4xl font-black uppercase tracking-tighter leading-none hover:opacity-75 transition-opacity"><a href="index.html">V.S.O.T<br>STUDIO</a></div>
+    <nav class="hidden md:flex gap-8 mono text-sm uppercase font-bold">
+      <a href="about.html" class="bg-[#f4f4f4] text-black px-2">About</a>
+      <a href="products.html" class="hover:bg-[#f4f4f4] hover:text-[#000] px-2 transition-colors">Products</a>
+      <a href="careers.html" class="hover:bg-[#f4f4f4] hover:text-[#000] px-2 transition-colors">Careers</a>
+      <a href="contact.html" class="hover:bg-[#f4f4f4] hover:text-[#000] px-2 transition-colors">Contact</a>
+    </nav>
+  </header>
+
+  <main class="flex-1 flex flex-col">
+    <div class="border-b-2 border-[#f4f4f4] p-8 md:p-16">
+      <h1 class="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-none max-w-4xl">
+        Architects of the Next Frontier
+      </h1>
+    </div>
+
+    <!-- Brutalist Grid for Exec Team -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 flex-1">
+      
+      <!-- CEO -->
+      <div class="border-b-2 lg:border-b-0 lg:border-r-2 border-[#f4f4f4] p-8 flex flex-col group">
+        <div class="text-6xl font-black mb-4 text-[#f4f4f4] group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-gray-600 transition-all">01</div>
+        <h2 class="text-2xl font-black uppercase mb-1">Jon Snow</h2>
+        <div class="mono text-xs uppercase font-bold border-b-2 border-[#f4f4f4] pb-4 mb-4">Chief Executive Officer</div>
+        <p class="text-sm leading-relaxed text-gray-400 font-medium">
+          Leading the charge into the unknown. "Winter is behind us; the universe is ahead." Ensuring survival against all odds in zero-G environments.
+        </p>
+      </div>
+
+      <!-- COO -->
+      <div class="border-b-2 lg:border-b-0 lg:border-r-2 border-[#f4f4f4] p-8 flex flex-col group">
+        <div class="text-6xl font-black mb-4 text-[#f4f4f4] group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-gray-600 transition-all">02</div>
+        <h2 class="text-2xl font-black uppercase mb-1">Eddard Stark</h2>
+        <div class="mono text-xs uppercase font-bold border-b-2 border-[#f4f4f4] pb-4 mb-4">Chief Operating Officer</div>
+        <p class="text-sm leading-relaxed text-gray-400 font-medium">
+          Ensuring structural integrity and operational honor across all orbital platforms. The bedrock of our launch manifest logistics.
+        </p>
+      </div>
+
+      <!-- CTO -->
+      <div class="border-b-2 lg:border-b-0 lg:border-r-2 border-[#f4f4f4] p-8 flex flex-col group">
+        <div class="text-6xl font-black mb-4 text-[#f4f4f4] group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-gray-600 transition-all">03</div>
+        <h2 class="text-2xl font-black uppercase mb-1">Tyrion Lannister</h2>
+        <div class="mono text-xs uppercase font-bold border-b-2 border-[#f4f4f4] pb-4 mb-4">Chief Technology Officer</div>
+        <p class="text-sm leading-relaxed text-gray-400 font-medium">
+          Mastermind behind the propulsion drives. He drinks, and he knows astrophysics. Redefining what is possible in deep space fuel efficiency.
+        </p>
+      </div>
+
+      <!-- CIO -->
+      <div class="border-b-2 md:border-b-0 lg:border-r-0 border-[#f4f4f4] p-8 flex flex-col group">
+        <div class="text-6xl font-black mb-4 text-[#f4f4f4] group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-gray-600 transition-all">04</div>
+        <h2 class="text-2xl font-black uppercase mb-1">Sansa Stark</h2>
+        <div class="mono text-xs uppercase font-bold border-b-2 border-[#f4f4f4] pb-4 mb-4">Chief Information Officer</div>
+        <p class="text-sm leading-relaxed text-gray-400 font-medium">
+          Managing secure inter-system communications and galactic data networks. Keeping the Spark Array completely uncompromised.
+        </p>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="border-t-2 border-[#f4f4f4] p-6 flex flex-col sm:flex-row justify-between items-center mono text-xs uppercase gap-4">
+    <div>&copy; 2026 Vision Space of Throwns</div>
+    <div class="flex gap-6">
+      <a href="terms.html" class="hover:underline underline-offset-4">Terms of Service</a>
+      <a href="#" class="hover:underline underline-offset-4">Privacy</a>
+    </div>
+  </footer>
+</body>
+</html>

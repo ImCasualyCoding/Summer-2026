@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>V.S.O.T &mdash; Products</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&family=JetBrains+Mono:wght@400;700&display=swap');
+    body { font-family: 'Inter', sans-serif; background-color: #000; color: #f4f4f4; }
+    .mono { font-family: 'JetBrains Mono', monospace; }
+  </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col selection:bg-[#f4f4f4] selection:text-black">
+  <header class="border-b-2 border-[#f4f4f4] p-6 flex justify-between items-end">
+    <div class="text-4xl font-black uppercase tracking-tighter leading-none hover:opacity-75 transition-opacity"><a href="index.html">V.S.O.T<br>STUDIO</a></div>
+    <nav class="hidden md:flex gap-8 mono text-sm uppercase font-bold">
+      <a href="about.html" class="hover:bg-[#f4f4f4] hover:text-[#000] px-2 transition-colors">About</a>
+      <a href="products.html" class="bg-[#f4f4f4] text-black px-2">Products</a>
+      <a href="careers.html" class="hover:bg-[#f4f4f4] hover:text-[#000] px-2 transition-colors">Careers</a>
+      <a href="contact.html" class="hover:bg-[#f4f4f4] hover:text-[#000] px-2 transition-colors">Contact</a>
+    </nav>
+  </header>
+
+  <main class="flex-1 flex flex-col">
+    <div class="border-b-2 border-[#f4f4f4] p-8 md:p-16 flex flex-col md:flex-row justify-between md:items-end gap-8">
+      <h1 class="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-none">
+        Core Capabilities
+      </h1>
+      <div class="mono text-xs uppercase max-w-xs text-gray-400 font-bold">
+        Index of primary systems and orbital services currently in active deployment.
+      </div>
+    </div>
+
+    <!-- Brutalist List/Grid -->
+    <div class="flex-1 flex flex-col">
+      
+      <!-- Dragon Rocket -->
+      <article class="border-b-2 border-[#f4f4f4] grid grid-cols-1 md:grid-cols-12 group hover:bg-[#111] transition-colors">
+        <div class="md:col-span-3 p-8 border-b-2 md:border-b-0 md:border-r-2 border-[#f4f4f4] flex flex-col justify-between">
+          <div class="mono text-4xl font-black">SYS.01</div>
+          <div class="mt-8 mono text-xs uppercase font-bold tracking-widest text-gray-500">HEAVY-LIFT VEHICLE</div>
+        </div>
+        <div class="md:col-span-9 p-8 flex flex-col md:flex-row justify-between md:items-center gap-8">
+          <div class="max-w-2xl">
+            <h2 class="text-4xl font-black uppercase tracking-tight mb-4 group-hover:underline underline-offset-8">Dragon Rocket</h2>
+            <p class="text-lg text-gray-300 font-medium leading-relaxed">
+              Fully reusable, heavy-lift launch architecture designed for interplanetary cargo and high-capacity crew transport. Utilizing raptor-class methane engines for maximum efficiency.
+            </p>
+          </div>
+          <a href="#" class="mono text-sm uppercase font-bold border-2 border-[#f4f4f4] px-6 py-3 whitespace-nowrap hover:bg-[#f4f4f4] hover:text-black transition-colors">View Specs</a>
+        </div>
+      </article>
+
+      <!-- Spark Array -->
+      <article class="border-b-2 border-[#f4f4f4] grid grid-cols-1 md:grid-cols-12 group hover:bg-[#111] transition-colors">
+        <div class="md:col-span-3 p-8 border-b-2 md:border-b-0 md:border-r-2 border-[#f4f4f4] flex flex-col justify-between">
+          <div class="mono text-4xl font-black">SYS.02</div>
+          <div class="mt-8 mono text-xs uppercase font-bold tracking-widest text-gray-500">ORBITAL COMMS</div>
+        </div>
+        <div class="md:col-span-9 p-8 flex flex-col md:flex-row justify-between md:items-center gap-8">
+          <div class="max-w-2xl">
+            <h2 class="text-4xl font-black uppercase tracking-tight mb-4 group-hover:underline underline-offset-8">Spark Array</h2>
+            <p class="text-lg text-gray-300 font-medium leading-relaxed">
+              Low-orbit satellite constellation providing ultra-low latency, high-bandwidth broadband globally. Immune to terrestrial infrastructure failures.
+            </p>
+          </div>
+          <a href="#" class="mono text-sm uppercase font-bold border-2 border-[#f4f4f4] px-6 py-3 whitespace-nowrap hover:bg-[#f4f4f4] hover:text-black transition-colors">Check Coverage</a>
+        </div>
+      </article>
+
+      <!-- Traffic to Mars -->
+      <article class="grid grid-cols-1 md:grid-cols-12 group hover:bg-[#111] transition-colors">
+        <div class="md:col-span-3 p-8 border-b-2 md:border-b-0 md:border-r-2 border-[#f4f4f4] flex flex-col justify-between">
+          <div class="mono text-4xl font-black">SYS.03</div>
+          <div class="mt-8 mono text-xs uppercase font-bold tracking-widest text-gray-500">TRANSIT PROTOCOL</div>
+        </div>
+        <div class="md:col-span-9 p-8 flex flex-col md:flex-row justify-between md:items-center gap-8">
+          <div class="max-w-2xl">
+            <h2 class="text-4xl font-black uppercase tracking-tight mb-4 group-hover:underline underline-offset-8">Traffic to Mars</h2>
+            <p class="text-lg text-gray-300 font-medium leading-relaxed">
+              Commercial transit service facilitating colonization and terraforming logistics to the Red Planet. Scheduled launch windows dynamically optimized via AI.
+            </p>
+          </div>
+          <a href="#" class="mono text-sm uppercase font-bold border-2 border-[#f4f4f4] px-6 py-3 whitespace-nowrap hover:bg-[#f4f4f4] hover:text-black transition-colors">Book Transit</a>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <footer class="border-t-2 border-[#f4f4f4] p-6 flex flex-col sm:flex-row justify-between items-center mono text-xs uppercase gap-4 mt-auto">
+    <div>&copy; 2026 Vision Space of Throwns</div>
+    <div class="flex gap-6">
+      <a href="terms.html" class="hover:underline underline-offset-4">Terms of Service</a>
+      <a href="#" class="hover:underline underline-offset-4">Privacy</a>
+    </div>
+  </footer>
+</body>
+</html>

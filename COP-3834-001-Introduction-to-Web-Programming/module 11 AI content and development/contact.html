@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>V.S.O.T &mdash; Contact</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&family=JetBrains+Mono:wght@400;700&display=swap');
+    body { font-family: 'Inter', sans-serif; background-color: #000; color: #f4f4f4; }
+    .mono { font-family: 'JetBrains Mono', monospace; }
+    
+    /* Terminal input styling */
+    input, textarea {
+      background: transparent;
+      border: 2px solid #333;
+      color: #f4f4f4;
+      font-family: 'JetBrains Mono', monospace;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    input:focus, textarea:focus {
+      border-color: #f4f4f4;
+    }
+  </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col selection:bg-[#f4f4f4] selection:text-black">
+  <header class="border-b-2 border-[#f4f4f4] p-6 flex justify-between items-end">
+    <div class="text-4xl font-black uppercase tracking-tighter leading-none hover:opacity-75 transition-opacity"><a href="index.html">V.S.O.T<br>STUDIO</a></div>
+    <nav class="hidden md:flex gap-8 mono text-sm uppercase font-bold">
+      <a href="about.html" class="hover:bg-[#f4f4f4] hover:text-[#000] px-2 transition-colors">About</a>
+      <a href="products.html" class="hover:bg-[#f4f4f4] hover:text-[#000] px-2 transition-colors">Products</a>
+      <a href="careers.html" class="hover:bg-[#f4f4f4] hover:text-[#000] px-2 transition-colors">Careers</a>
+      <a href="contact.html" class="bg-[#f4f4f4] text-black px-2">Contact</a>
+    </nav>
+  </header>
+
+  <main class="flex-1 flex grid grid-cols-1 md:grid-cols-2">
+    <div class="border-b-2 md:border-b-0 md:border-r-2 border-[#f4f4f4] p-8 md:p-16 flex flex-col justify-between">
+      <div>
+        <h1 class="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-none mb-6">
+          Initiate<br>Sequence
+        </h1>
+        <p class="text-xl font-medium max-w-md text-gray-400">
+          Establish a secure comms link with our command center. Expect transmission response within 1.2 standard cycles.
+        </p>
+      </div>
+      
+      <div class="mt-12 mono text-sm uppercase space-y-4 text-gray-500 font-bold">
+        <p>DIRECT LINE: +1-800-SPACE-DR</p>
+        <p>TERMINAL: HQ-EARTH-001</p>
+        <p>ROUTING: SYS/SECURE</p>
+      </div>
+    </div>
+
+    <div class="p-8 md:p-16 flex flex-col justify-center">
+      <form class="space-y-8 max-w-md w-full">
+        <div class="flex flex-col gap-2">
+          <label for="name" class="mono text-xs uppercase font-bold text-gray-400">Designation (Name)</label>
+          <input type="text" id="name" class="px-4 py-3 w-full uppercase" required placeholder="JON SNOW">
+        </div>
+
+        <div class="flex flex-col gap-2">
+          <label for="email" class="mono text-xs uppercase font-bold text-gray-400">Comms Channel (Email)</label>
+          <input type="email" id="email" class="px-4 py-3 w-full uppercase" required placeholder="JON@WINTERFELL.COM">
+        </div>
+
+        <div class="flex flex-col gap-2">
+          <label for="message" class="mono text-xs uppercase font-bold text-gray-400">Transmission Data</label>
+          <textarea id="message" rows="5" class="px-4 py-3 w-full uppercase resize-none" required placeholder="ENTER PAYLOAD..."></textarea>
+        </div>
+
+        <button type="submit" class="w-full border-2 border-[#f4f4f4] bg-transparent text-[#f4f4f4] hover:bg-[#f4f4f4] hover:text-black font-black uppercase tracking-widest py-4 transition-colors">
+          Transmit Data
+        </button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="border-t-2 border-[#f4f4f4] p-6 flex flex-col sm:flex-row justify-between items-center mono text-xs uppercase gap-4 mt-auto">
+    <div>&copy; 2026 Vision Space of Throwns</div>
+    <div class="flex gap-6">
+      <a href="terms.html" class="hover:underline underline-offset-4">Terms of Service</a>
+      <a href="#" class="hover:underline underline-offset-4">Privacy</a>
+    </div>
+  </footer>
+</body>
+</html>

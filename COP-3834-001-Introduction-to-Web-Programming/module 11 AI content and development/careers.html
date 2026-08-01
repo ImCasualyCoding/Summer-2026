@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>V.S.O.T &mdash; Careers</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&family=JetBrains+Mono:wght@400;700&display=swap');
+    body { font-family: 'Inter', sans-serif; background-color: #000; color: #f4f4f4; }
+    .mono { font-family: 'JetBrains Mono', monospace; }
+    
+    input, select, textarea {
+      background: transparent;
+      border: 2px solid #333;
+      color: #f4f4f4;
+      font-family: 'JetBrains Mono', monospace;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    input:focus, select:focus, textarea:focus {
+      border-color: #f4f4f4;
+    }
+    option {
+      background: #000;
+      color: #f4f4f4;
+    }
+  </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col selection:bg-[#f4f4f4] selection:text-black">
+  <header class="border-b-2 border-[#f4f4f4] p-6 flex justify-between items-end">
+    <div class="text-4xl font-black uppercase tracking-tighter leading-none hover:opacity-75 transition-opacity"><a href="index.html">V.S.O.T<br>STUDIO</a></div>
+    <nav class="hidden md:flex gap-8 mono text-sm uppercase font-bold">
+      <a href="about.html" class="hover:bg-[#f4f4f4] hover:text-[#000] px-2 transition-colors">About</a>
+      <a href="products.html" class="hover:bg-[#f4f4f4] hover:text-[#000] px-2 transition-colors">Products</a>
+      <a href="careers.html" class="bg-[#f4f4f4] text-black px-2">Careers</a>
+      <a href="contact.html" class="hover:bg-[#f4f4f4] hover:text-[#000] px-2 transition-colors">Contact</a>
+    </nav>
+  </header>
+
+  <main class="flex-1 flex flex-col lg:flex-row">
+    
+    <!-- Job Listings -->
+    <div class="w-full lg:w-3/5 border-b-2 lg:border-b-0 lg:border-r-2 border-[#f4f4f4] flex flex-col">
+      <div class="p-8 md:p-12 border-b-2 border-[#f4f4f4]">
+        <h1 class="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-none mb-4">
+          Join The Vanguard
+        </h1>
+        <p class="text-xl font-medium max-w-md text-gray-400">
+          Recruiting the brightest minds to architect the infrastructure of the solar system.
+        </p>
+      </div>
+
+      <div class="flex-1 flex flex-col">
+        <!-- Job 1 -->
+        <div class="border-b-2 border-[#f4f4f4] p-8 md:p-12 hover:bg-[#111] transition-colors cursor-pointer group flex justify-between items-center">
+          <div>
+            <h2 class="text-2xl font-black uppercase group-hover:underline underline-offset-4 mb-2">Propulsion Engineer</h2>
+            <div class="mono text-xs uppercase font-bold text-gray-500">Dragon Team / Mars Base Alpha / Remote Option</div>
+          </div>
+          <div class="mono text-sm uppercase font-bold border-2 border-[#f4f4f4] px-4 py-2 hidden sm:block">Full-Time</div>
+        </div>
+        
+        <!-- Job 2 -->
+        <div class="border-b-2 border-[#f4f4f4] p-8 md:p-12 hover:bg-[#111] transition-colors cursor-pointer group flex justify-between items-center">
+          <div>
+            <h2 class="text-2xl font-black uppercase group-hover:underline underline-offset-4 mb-2">Orbital Mechanics Specialist</h2>
+            <div class="mono text-xs uppercase font-bold text-gray-500">Navigation Dept / Earth LEO Station</div>
+          </div>
+          <div class="mono text-sm uppercase font-bold border-2 border-[#f4f4f4] px-4 py-2 hidden sm:block">Contract</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Application Form -->
+    <div class="w-full lg:w-2/5 p-8 md:p-12">
+      <h2 class="text-3xl font-black uppercase tracking-tight mb-8">Submit Credentials</h2>
+      
+      <form class="space-y-6">
+        <div class="flex flex-col gap-2">
+          <label class="mono text-xs uppercase font-bold text-gray-400">Operative Name</label>
+          <input type="text" class="px-4 py-3 w-full uppercase" required placeholder="JON SNOW">
+        </div>
+        
+        <div class="flex flex-col gap-2">
+          <label class="mono text-xs uppercase font-bold text-gray-400">Comms (Email)</label>
+          <input type="email" class="px-4 py-3 w-full uppercase" required placeholder="JON@WINTERFELL.COM">
+        </div>
+        
+        <div class="flex flex-col gap-2">
+          <label class="mono text-xs uppercase font-bold text-gray-400">Role Applying For</label>
+          <select class="px-4 py-3 w-full uppercase appearance-none rounded-none cursor-pointer">
+            <option>Propulsion Engineer</option>
+            <option>Orbital Mechanics Specialist</option>
+            <option>General Application</option>
+          </select>
+        </div>
+        
+        <div class="flex flex-col gap-2">
+          <label class="mono text-xs uppercase font-bold text-gray-400">Data Log (Cover Letter)</label>
+          <textarea rows="4" class="px-4 py-3 w-full uppercase resize-none" required placeholder="PASTE CREDENTIALS..."></textarea>
+        </div>
+        
+        <button type="submit" class="w-full border-2 border-[#f4f4f4] bg-transparent text-[#f4f4f4] hover:bg-[#f4f4f4] hover:text-black font-black uppercase tracking-widest py-4 transition-colors mt-4">
+          Upload Profile
+        </button>
+      </form>
+    </div>
+
+  </main>
+
+  <footer class="border-t-2 border-[#f4f4f4] p-6 flex flex-col sm:flex-row justify-between items-center mono text-xs uppercase gap-4 mt-auto">
+    <div>&copy; 2026 Vision Space of Throwns</div>
+    <div class="flex gap-6">
+      <a href="terms.html" class="hover:underline underline-offset-4">Terms of Service</a>
+      <a href="#" class="hover:underline underline-offset-4">Privacy</a>
+    </div>
+  </footer>
+</body>
+</html>
