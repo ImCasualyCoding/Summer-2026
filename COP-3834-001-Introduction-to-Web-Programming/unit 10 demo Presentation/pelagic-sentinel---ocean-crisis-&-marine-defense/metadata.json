@@ -1,0 +1,6 @@
+{
+  "name": "Pelagic Sentinel - Ocean Crisis & Marine Defense",
+  "description": "Data-backed activism and real-time monitoring platform for marine life harmed by ocean pollution.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
